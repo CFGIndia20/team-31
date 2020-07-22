@@ -20,3 +20,9 @@ Name: **Kimaya Desai**\
 Institute: Sardar Patel Institute of Technology\
 Contact: 9967149783\
 Email: kimaya.desai941@gmail.com
+
+Hey Guys!
+Name: **Aadil Sachdev**
+Institute: Thapar University
+Contact: 9478049621
+Email: aadilsachdev24@gmail.com
