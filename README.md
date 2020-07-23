@@ -26,3 +26,9 @@ Name: **Aadil Sachdev**\
 Institute: Thapar University\
 Contact: 9478049621\
 Email: aadilsachdev24@gmail.com\
+
+Hello!\
+Name: **Raj Panchal**\
+Institute: Vellore Institute of Technology, Vellore\
+Contact: 9913320298\
+Email: rajpanchal243@gmail.com
