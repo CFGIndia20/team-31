@@ -32,3 +32,9 @@ Name: **Raj Panchal**\
 Institute: Vellore Institute of Technology, Vellore\
 Contact: 9913320298\
 Email: rajpanchal243@gmail.com
+
+Hey!\
+Name: **Tisha Khatri**\
+Institute: Vellore Institute of Technology, Chennai\
+Contact: 8949492869\
+Email: tisha.khatri17@gmail.com
