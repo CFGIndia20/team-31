@@ -20,3 +20,27 @@ var studentSchema=new mongoose.Schema({
 });
 
 var studentTable=mongoose.model("studentTable",studentSchema);
+
+var teacherSchema=new mongoose.Schema({
+	id:Number,
+	name:String,
+	email:String,
+	password:String,
+	batchid:Array,
+	preference:String,
+});
+
+var teacherTable=mongoose.model("teacherTable",teacherSchema);
+
+var studentTable=mongoose.model("studentTable",studentSchema);
+
+var adminSchema=new mongoose.Schema({
+	id:Number,
+	name:String,
+	email:String,
+	password:String,
+});
+
+var adminTable=mongoose.model("adminTable",adminSchema);
+
+
