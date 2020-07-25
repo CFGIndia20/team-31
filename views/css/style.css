@@ -254,7 +254,7 @@ i:hover{
 }
 
 .moderate-green-bg{
-	background: #8dc63f;
+	background: linear-gradient(to bottom right, #3CA55C, #ffce00);
 }
 
 .vivid-yellow-bg{
