@@ -10,7 +10,6 @@ var	passportLocalMongoose = require('passport-local-mongoose');
 mongoose.connect('mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run', {useNewUrlParser: true}, function(err) {
 	console.log(err);
 });
-
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -23,7 +22,6 @@ app.use(require('express-session')({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
 var studentSchema=new mongoose.Schema({
 	id:Number,
 	name:String,
@@ -33,6 +31,7 @@ var studentSchema=new mongoose.Schema({
 	batchid:Number,
 	aadhaarid:Number
 });
+
 studentSchema.plugin(passportLocalMongoose);
 
 var studentTable=mongoose.model("studentTable",studentSchema);
@@ -76,6 +75,18 @@ app.get("/",function(req,res){
 	res.render("index1");
 })
 
+app.get("/student/login",function(req,res){
+	res.render("stud_signup");
+})
+
+app.get("/teacher/login",function(req,res){
+	res.render("teach_signup");
+})
+
+app.get("/admin/login",function(req,res){
+	res.render("admin_signup");
+})
+
 app.post("/login",function(req,res){
 	var option=req.body.option;
 	if(option=="student")
@@ -95,17 +106,25 @@ app.post("/login",function(req,res){
 })
 
 app.get("/student/login",function(req,res){
-	res.render("stud_signup");
 	res.render("index.ejs");
 
 })
 
+app.get("/student/dashboard",(req,res)=>{
+	res.render("stud_dashboard");
+});
 
-
+app.get("/teacher/dashboard",(req,res)=>{
+	res.render("teach_dashboard");
+});
 
 app.get("/teacher/dashboard",function(req,res){
 	//res.render();
 })
+
+app.get("/student/dashboard/book",(req,res)=>{
+	res.render("stud_dashboard");
+});
 
 app.post("/teacher/query",function(req,res){
 	var ob1=req.body.obj; 
@@ -131,10 +150,6 @@ app.get("/admin/dashboard",function(req,res){
 app.post("/admin/dashboard/resolve",function(req,res){
 	//res.render();
 })
-app.listen(4000,function(){
-
-
-
+app.listen(4500,function(){
 	console.log("Server started at 4000");
-
 })
