@@ -29,6 +29,8 @@ var teacherSchema=new mongoose.Schema({
 	password:String,
 	batchid:Array,
 	preference:String,
+	slots:Array,
+	tSlot:Number,
 });
 
 var teacherTable=mongoose.model("teacherTable",teacherSchema);
