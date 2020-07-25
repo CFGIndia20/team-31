@@ -230,6 +230,10 @@ body{
 	color:#ffffff;
 }
 
+i:hover{
+	color: black;
+}
+
 
 #color-panel .segment a.switcher{
 	width:24px;
@@ -242,19 +246,19 @@ body{
 }
 
 .orange-bg{
-	background: #e75b1e;
+	background: linear-gradient(to bottom right, #AA076B, #61045F);
 }
 
 .strong-blue-bg{
-	background: #1E69B8;
+	background: linear-gradient(to bottom right, #4776E6, #8E54E9);
 }
 
 .moderate-green-bg{
-	background: #8dc63f;
+	background: linear-gradient(to bottom right, #3CA55C, #ffce00);
 }
 
 .vivid-yellow-bg{
-	linear-gradient(to bottom right, yellow, red);
+	background: linear-gradient(to bottom right, yellow, red);
 }
 
 .block-title{
@@ -473,7 +477,7 @@ h1 span {
 	content:"\e003";
 	font-family: 'Glyphicons Halflings';
 	opacity: 0;
-	background-color: rgba(231, 91, 30, 0.75);
+	background-color: #ffce00;
 	position: absolute;
 	right: 3px;
 	left: 3px;

@@ -2,13 +2,26 @@ var express=require("express");
 var app=express();
 var bodyParser=require("body-parser");
 var mongoose=require("mongoose");
+var	passport = require('passport');
+var	LocalStrategy = require('passport-local');
+var	passportLocalMongoose = require('passport-local-mongoose');
 
 
-mongoose.connect("mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run",{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run', {useNewUrlParser: true}, function(err) {
+	console.log(err);
+});
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
+app.use(require('express-session')({
+	secret: 'CFG',
+	resave: false,
+	saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 var studentSchema=new mongoose.Schema({
@@ -18,9 +31,15 @@ var studentSchema=new mongoose.Schema({
 	password:String,
 	level:String,
 	batchid:Number,
-	aadhaarid:Number,
+	aadhaarid:Number
 });
+studentSchema.plugin(passportLocalMongoose);
 
+var studentTable=mongoose.model("studentTable",studentSchema);
+
+passport.use(new LocalStrategy(studentTable.authenticate()));
+passport.serializeUser(studentTable.serializeUser());
+passport.deserializeUser(studentTable.deserializeUser());
 
 var teacherSchema=new mongoose.Schema({
 	id:Number,
@@ -54,7 +73,6 @@ var batchSchema=new mongoose.Schema({
 
 
 app.get("/",function(req,res){
-
 	res.render("index1");
 })
 
