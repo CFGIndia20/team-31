@@ -1,67 +1,71 @@
+<%- include("partials/header_stud.ejs") %>
 
-<%- include("partials/header_form.ejs") %>
-
-<div class="container" style="padding:0 ;margin:0">
-    <div class="login-box">
-    <div class="row">
-        <div class="col-md-6  login-left">
-        <h2>Login Here</h2>
-        <form action="/teacher/dashboard" method="GET"  enctype="multipart/form-data" >
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" class="form-control" required >
-            </div>
-
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="pass" id="password" class="form-control" required>
+<%- include("partials/header_stud.ejs") %>
+  <div class="login-wrap" style="height:850px;">
+    <div class="login-html" style="background:url("https://bostonglobe-prod.cdn.arcpublishing.com/resizer/uK8vNJTlA_HMPFB9TcgUsHDXpxs=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/4TKRSQ6PSRG2LIBZILQZHTL3TM.jpg") no-repeat center;">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+        <form class="email-login" action="/student/dashboard" method="GET"  enctype="multipart/form-data">
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label">Email</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign In">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Forgot Password?</a>
+          </div>
         </div>
-
-        <div>
-            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-            </i> Login with Google+
-           </a>
+        </form>
+      <form class="email-login" action="/student/dashboard" method="GET"  enctype="multipart/form-data">
+        <div class="sign-up-htm">
+          <div class="group">
+            <label for="user" class="label">Name</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="user" class="label">Email</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Repeat Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Batch Id</label>
+            <input id="pass" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Preference</label>
+            <select id="cars" name="cars">
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </select>
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">Already Member?</a>
+          </div>
         </div>
-        <div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </div>
-        
-     </form>
-        
-    
+      </form>
+      </div>
     </div>
+  </div>
 
-
-    <div class="col-md-6 login-right">
-        <h2>Register Here</h2>
-        <form action="/teacher/dashboard" method="GET"  enctype="multipart/form-data" >
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" required >
-        </div>
-
-
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" class="form-control" required >
-        </div>
-
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="pass" id="password" class="form-control" required>
-        </div>
-
-
-        
-
-        <button type="submit" class="btn btn-primary">Register</button>
-     </form>
-        
-    
-    </div>
-    </div>
-</div>
-
-<div class="container fixed-height" ></div>
-
-<%- include("partials/footer.ejs") %>
+    <%- include("partials/footer.ejs") %>

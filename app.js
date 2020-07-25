@@ -80,6 +80,7 @@ app.get("/student/login",function(req,res){
 })
 
 app.get("/teacher/login",function(req,res){
+	console.log("hi Raj");
 	res.render("teach_signup");
 })
 
@@ -110,21 +111,12 @@ app.get("/student/login",function(req,res){
 
 })
 
-app.get("/student/dashboard",(req,res)=>{
-	res.render("stud_dashboard");
-});
 
-app.get("/teacher/dashboard",(req,res)=>{
-	res.render("teach_dashboard");
-});
+
 
 app.get("/teacher/dashboard",function(req,res){
 	//res.render();
 })
-
-app.get("/student/dashboard/book",(req,res)=>{
-	res.render("stud_dashboard");
-});
 
 app.post("/teacher/query",function(req,res){
 	var ob1=req.body.obj; 
