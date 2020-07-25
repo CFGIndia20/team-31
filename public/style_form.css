@@ -1,6 +1,6 @@
 body{
   margin:0;
-  color:#6a6f8c;
+  color:#ffce00;
   background:#ffce00;
   font:600 16px/18px 'Open Sans',sans-serif;
 }
@@ -9,9 +9,9 @@ body{
   margin:auto;
   height:850px;
   max-width:525px;
-  min-height:670px;
   position:relative;
-  background:url("https://bostonglobe-prod.cdn.arcpublishing.com/resizer/uK8vNJTlA_HMPFB9TcgUsHDXpxs=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/4TKRSQ6PSRG2LIBZILQZHTL3TM.jpg") no-repeat center;
+  background:url(../images/signup.jpg) no-repeat center;
+  /* background:url("https://bostonglobe-prod.cdn.arcpublishing.com/resizer/uK8vNJTlA_HMPFB9TcgUsHDXpxs=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/4TKRSQ6PSRG2LIBZILQZHTL3TM.jpg") no-repeat center; */
   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
