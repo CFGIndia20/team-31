@@ -77,7 +77,6 @@ app.post("/login",function(req,res){
 })
 
 app.get("/student/login",function(req,res){
-	res.render("stud_signup");
 	res.render("index.ejs");
 
 })
