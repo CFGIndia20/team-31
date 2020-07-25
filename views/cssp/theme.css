@@ -1,9 +1,3 @@
-/*------------------------------------
-Project name: Campus Interaction
-Date Created: 28/05/2018
-Author: PreludeSys
-------------------------------------*/
-
 /* Dashboard */
 
 .wrapper-box{
@@ -31,117 +25,37 @@ Author: PreludeSys
     border-bottom: 1px solid #CCCCCC;
 }
 
-.source-list{    
-    list-style:none;
-    padding:0;
-    text-align:center;
-    width:100%;
-    margin:0 auto;
-}
-
-.source-list li{
-    display: inline;
-    padding:20px 10px; 
-    border-right: 1px solid #CCCCCC;
-}
-
-.source-list li:last-child{
-    border:0;
-}
-
-.source-list img{
-    width:12%;
-    height:82px;
-    object-fit: contain;
-}
-
 .form-wrapper .alert-success{
     text-align: center;
 }
-@media (max-width:767px){
-    
-   
-    /* Admin Dashboard */
-    .dashboard-wrapper{
-        width:95%;
-        margin: 18px auto;
-    }
-
-    .padlt-15{
-        padding:0 10px!important;
-    }
-
-    .ciinlineright{
-        float:none;
-    }
-    .addashboard-head h4{
-        font-size: 14px;
-        float: none;
-        margin-bottom: 15px!important;
-    }
-    .addashboard-filter {
-        float: none;
-        width: 100%;
-    }
-    .interview-uploadform{
-        width:90%;
-        margin:0 auto;
-    }
-    .interview-uploadform .btn-submit{
-        display:block;
-        width:100%;
-    }
-    .admin-element{
-        height:110px;
-    }
-    .admin-icon{
-        width:110px;
-        height:110px;
-    }
-}
-
-
-@media (min-width:768px) and (max-width:1024px){
-    
-    /* Admin Dashboard */
-    .admin-text{
-        font-size:10px;
-    }
-}
-
-
 
 .col-btn{
-    margin: 24px 0 0;
+    margin: 15px 0 0;
 }
 
 /* Dashboard - Cards */
 .count-item{
     display: block;
-    min-height: 110px;
+    height: 100px;
     background: #FFFFFF;
     width: 100%;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
     border-radius: 2px;
     margin-bottom: 15px;
 }
 
 .count-icon{
-    border-top-left-radius: 2px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 2px;
     display: block;
     float: left;
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 200px;
     text-align: center;
     line-height: 110px;
     background: rgba(0,0,0,0.2);
 }
 
 .count-info{
-    padding: 6.95% 10px;
+    padding: 2.95% 10px;
     margin-left: 110px;
     text-align: center;
     color: #FFFFFF;
@@ -150,13 +64,12 @@ Author: PreludeSys
 .count-values{
     display: block;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 50px;
 }
 
 .count-text{
     display: block;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -191,5 +104,3 @@ Author: PreludeSys
 .bgicon-4{
     background-color:#ffce00;
 }
-
-

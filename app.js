@@ -48,19 +48,14 @@ var adminTable=mongoose.model("adminTable",adminSchema);
 var batchSchema=new mongoose.Schema({
 	id:Number,
 	name:String,
+	slot_id:Number,
+	teacher_id:Number,
 });
 
-var batchTable=mongoose.model("batchTable",batchSchema);
-
-var querySchema=new mongoose.Schema({
-	id: Number,
-	content:String
-});
-
-var queryTable=mongoose.model("queryTable",querySchema);
 
 app.get("/",function(req,res){
-	res.render("index");
+
+	res.render("index1");
 })
 
 app.post("/login",function(req,res){
@@ -83,16 +78,12 @@ app.post("/login",function(req,res){
 
 app.get("/student/login",function(req,res){
 	res.render("stud_signup");
+	res.render("index.ejs");
+
 })
 
 
-app.get("/student/dashboard",function(req,res){
-	res.render("stud_dashboard.ejs");
-})
 
-app.post("/student/dashboard/book",function(req,res){
-	
-})
 
 app.get("/teacher/dashboard",function(req,res){
 	//res.render();
@@ -122,7 +113,9 @@ app.get("/admin/dashboard",function(req,res){
 app.post("/admin/dashboard/resolve",function(req,res){
 	//res.render();
 })
-app.listen(5000,function(){
+app.listen(4000,function(){
+
+
 
 	console.log("Server started at 4000");
 
