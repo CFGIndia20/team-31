@@ -1,0 +1,13 @@
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fdcb03;
+}
+.main-menu .navbar-default .navbar-nav .active a{
+	color: #fdcb03;
+}
+.main-menu nav li a::after {
+    background: #fdcb03;
+}
+
+#color-panel a.panel-button:hover{
+	color: #fdcb03;
+}

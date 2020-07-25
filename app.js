@@ -60,7 +60,7 @@ var querySchema=new mongoose.Schema({
 var queryTable=mongoose.model("queryTable",querySchema);
 
 app.get("/",function(req,res){
-	res.render("stud_signup");
+	res.render("index1");
 })
 
 app.post("/login",function(req,res){
