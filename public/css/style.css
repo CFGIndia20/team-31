@@ -134,28 +134,18 @@ body{
 
 #nav_button{
 	color: #fff;
-	margin-top:20px;
-	padding:10px;
+	margin-top:15px;
+	padding:15px;
 	font-size: 15px;
 	border-radius: 10px;
 }
 #nav_button::after{
 	padding:10px;
-	font-weight: bold;
 }
-#nav_button:hover{
-	box-shadow: 0 0 1000px rgba(0,0,0,1) inset;
-  border: 3px solid rgba(255,255,255,1);
-  color: rgba(255,255,255,1);
-	transition: none;
-	transform: scale(1, 1);
-}
-@media only screen and (max-width: 768px) {
-  .main-menu nav li a{
-		float:right;
-		width:50%;
-		margin-left: 10%;
-	}
+#nav_button:hover::before, #nav_button:hover::after{
+	background-color: #000;
+	transform: none;
+	transition: none; 
 }
 /*------------------------------------------------------------------COLOUR PANEL-------------------------------------------------------------------*/
 #color-panel{
