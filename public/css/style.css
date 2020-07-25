@@ -477,7 +477,7 @@ h1 span {
 	content:"\e003";
 	font-family: 'Glyphicons Halflings';
 	opacity: 0;
-	background-color: rgba(231, 91, 30, 0.75);
+	background-color: #ffce00;
 	position: absolute;
 	right: 3px;
 	left: 3px;
