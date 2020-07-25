@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link id="changeable-colors" rel="stylesheet" href="css/colors/yellow.css" />
-    <script src="js/modernizer.js"></script>
 </head>
 
 <body>
-    <div id="loader">
+    <!-- <div id="loader">
         <div id="status"></div>
-    </div>
+    </div> -->
 
     <div id="site-header">
         <header id="header" class="header-block-top">
@@ -93,7 +92,7 @@
 
     <div id="about" class="banner full-screen-mode parallax" style="background:#fff;">
       <h2 class="block-title text-center" style="color:black;">About Us</h2>
-        The/Nudge exists to alleviate poverty, sustainably and scalably, and our dream is to see a poverty-free India within our generation.
+      The purpose of The Nudge is to reduce poverty by helping the less-fortunate people build a strong life, learn skills, and earn a living. In other words, the goal is to enable them to break free from the cycle of poverty. 
     </div>
 
     <div id="gallery" class="gallery-main pad-top-100 pad-bottom-100">
@@ -247,7 +246,6 @@
                 </div>
             </div>
         </div>
-    
 
     <div id="login" class="login-main pad-top-100 pad-bottom-100 parallax">
         <div class="container">
@@ -261,6 +259,7 @@
                                     <div class="login-img-box">
                                         <img src="images/student.png" alt="" height="200px" width="200px" />
                                         <div class="overlay">
+                                            <!-- Add here -->
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
@@ -275,6 +274,7 @@
                                     <div class="login-img-box">
                                         <img src="images/teacher.png" alt="" height="200px" width="200px"/>
                                         <div class="overlay">
+                                            <!-- Add here -->
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
@@ -289,6 +289,7 @@
                                     <div class="login-img-box">
                                         <img src="images/admin.png" alt="" height="200px" width="200px"/>
                                         <div class="overlay">
+                                            <!-- Add here -->
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
@@ -353,78 +354,13 @@
     </div>
 
     <!-- ALL JS FILES -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="js/all.js"></script>
+    <script src="js/modernizer.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="js/custom.js"></script>
-	<script>
-		(function($) {
-    "use strict";
-
-
-			// SMOOTH SCROLL
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-				|| location.hostname == this.hostname) {
-
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				   if (target.length) {
-					 $('html,body').animate({
-						 scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
-
-		  $('body').scrollspy({
-			target: '#mainNav',
-			offset: 54
-		  });
-
-		$(window).on('scroll', function () {
-			if ($(window).scrollTop() > 50) {
-				$('.header-block-top').addClass('fixed-menu');
-			} else {
-				$('.header-block-top').removeClass('fixed-menu');
-			}
-		});
-
-		// NAVBAR
-		$('.navbar-nav li a').on("click", function(e) {
-			$('.navbar-nav li').removeClass('active');
-			var $parent = $(this).parent();
-			if (!$parent.hasClass('active')) {
-				$parent.addClass('active');
-			}
-		});
-
-    // PRE-LOADER
-		$(window).load(function() {
-			$("#status").delay(800).fadeOut("slow");
-			$("#loader").delay(800).fadeOut("slow");
-		})
-
-    // COLOUR PANEL
-    $( "#color-panel .panel-button" ).click(function(){
-     $( "#color-panel" ).toggleClass( "close-color-panel", "open-color-panel", 1000 );
-     $( "#color-panel" ).toggleClass( "open-color-panel", "close-color-panel", 1000 );
-     return false;
-   });
-   // Color Skins
-   $('.switcher').click(function(){
-     var title = jQuery(this).attr('title');
-     jQuery('#changeable-colors').attr('href', 'css/colors/' + title + '.css');
-     return false;
-   });
-
-})(jQuery);
-
-	</script>
-
 
 	</div>
 	</body>
 </html>
-

@@ -246,7 +246,7 @@ i:hover{
 }
 
 .orange-bg{
-	background: #e75b1e;
+	background: linear-gradient(to bottom right, #AA076B, #61045F);
 }
 
 .strong-blue-bg{

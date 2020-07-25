@@ -23,3 +23,6 @@
 	background-image: linear-gradient(to bottom right, yellow, red);
 	color:#fff;
 }
+.gal-item a:after {
+	background-color: linear-gradient(to bottom right, yellow, red);
+}
