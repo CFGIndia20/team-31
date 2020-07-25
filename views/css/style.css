@@ -148,7 +148,7 @@ body{
   border: 3px solid rgba(255,255,255,1);
   color: rgba(255,255,255,1);
 	transition: none;
-	transform: none;
+	transform: scale(1, 1);
 }
 @media only screen and (max-width: 768px) {
   .main-menu nav li a{
