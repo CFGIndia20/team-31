@@ -141,11 +141,13 @@ body{
 }
 #nav_button::after{
 	padding:10px;
+	font-weight: bold;
 }
-#nav_button:hover::before, #nav_button:hover::after{
-	background-color: #000;
-	transform: none;
-	transition: none; 
+#nav_button:hover{
+	box-shadow: 0 0 1000px rgba(0,0,0,1) inset;
+  border: 3px solid rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+	transition: none;
 }
 /*------------------------------------------------------------------COLOUR PANEL-------------------------------------------------------------------*/
 #color-panel{
