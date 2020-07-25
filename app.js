@@ -75,6 +75,18 @@ app.get("/",function(req,res){
 	res.render("index1");
 })
 
+app.get("/student/login",function(req,res){
+	res.render("stud_signup");
+})
+
+app.get("/teacher/login",function(req,res){
+	res.render("teach_signup");
+})
+
+app.get("/admin/login",function(req,res){
+	res.render("admin_signup");
+})
+
 app.post("/login",function(req,res){
 	var option=req.body.option;
 	if(option=="student")
