@@ -1,4 +1,4 @@
-node_modules/
+/node_modules
 
 Team*.zip
 *.pem
@@ -6,3 +6,5 @@ Team*.zip
 *.crt
 *.key
 *.ovpn
+
+node_modules/
