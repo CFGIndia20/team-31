@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style_form.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-</head>
-<body>
+
+<%- include("partials/header_stud.ejs") %>
     <div class="container" style="padding:0 ;margin:0">
         <div class="login-box">
         <div class="row">
@@ -59,7 +50,10 @@
                 <input type="password" name="pass" id="password" class="form-control" required>
             </div>
 
-
+            <div class="form-group">
+                <label for="aadhar">Aadhar Card No</label>
+                <input type="text" name="aadhar" id="aadhar" class="form-control" required >
+            </div>
             
 
             <button type="submit" class="btn btn-primary">Register</button>
@@ -72,5 +66,4 @@
     
     <div class="container fixed-height" ></div>
 
-</body>
-</html>
+    <%- include("partials/footer.ejs") %>
