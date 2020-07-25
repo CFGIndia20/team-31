@@ -1,0 +1,21 @@
+.login-box{
+    max-width: 700px;
+    float: none;
+    margin:150px auto;
+}
+
+.login-left{
+    background-color: rgba(211,211,211,0.5);
+    padding: 30px;
+}
+.login-right{
+    background-color:white;
+    padding: 30px;
+}
+
+.google {
+    background-color: #dd4b39 !important;
+    color: white !important;
+    margin-bottom: 20px;
+  }
+
