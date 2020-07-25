@@ -1,21 +1,28 @@
 .navbar-default .navbar-toggle .icon-bar{
-	background-color: linear-gradient(to bottom right, yellow, red);
+	background-color: linear-gradient(to bottom right, #ffce00, red);
 }
 .main-menu .navbar-default .navbar-nav .active a{
-  color: linear-gradient(to bottom right, yellow, red);
+  color: linear-gradient(to bottom right, #ffce00, red);
 }
 .main-menu nav li a::after {
-  background: linear-gradient(to bottom right, yellow, red);
+  background: linear-gradient(to bottom right, #ffce00, red);
 }
 #nav_button{
-	background-image: linear-gradient(to bottom right, yellow, red);
+	background-image: linear-gradient(to bottom right, #ffce00, red);
 }
 #nav_button:hover{
-	border-color: linear-gradient(to bottom right, yellow, red);
+	border-color: linear-gradient(to bottom right, #ffce00, red);
 }
 #color-panel a.panel-button:hover{
-	color: linear-gradient(to bottom right, yellow, red);
+	color: linear-gradient(to bottom right, #ffce00, red);
 }
 .fa{
-	color: linear-gradient(to bottom right, yellow, red);
+	color: linear-gradient(to bottom right, #ffce00, red);
+}
+#contact{
+	background-image: linear-gradient(to bottom right, #ffce00, red);
+	color:#fff;
+}
+.gal-item a:after {
+	background-color: linear-gradient(to bottom right, #ffce00, red);
 }
