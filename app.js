@@ -9,3 +9,14 @@ app.use(express.static("public"));
 var mongoose=require("mongoose");
 mongoose.connect("mongodb://localhost/yelp_camp",{useNewUrlParser: true, useUnifiedTopology: true});
 
+var studentSchema=new mongoose.Schema({
+	id:Number,
+	name:String,
+	email:String,
+	password:String,
+	level:String,
+	batchid:Number,
+	aadhaarid:Number,
+});
+
+var studentTable=mongoose.model("studentTable",studentSchema);
