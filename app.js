@@ -60,7 +60,7 @@ var querySchema=new mongoose.Schema({
 var queryTable=mongoose.model("queryTable",querySchema);
 
 app.get("/",function(req,res){
-	res.render("index");
+	res.render("stud_signup");
 })
 
 app.post("/login",function(req,res){
@@ -122,7 +122,7 @@ app.get("/admin/dashboard",function(req,res){
 app.post("/admin/dashboard/resolve",function(req,res){
 	//res.render();
 })
-app.listen(5000,function(){
+app.listen(4000,function(){
 
 	console.log("Server started at 4000");
 
