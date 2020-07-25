@@ -10,7 +10,6 @@ var	passportLocalMongoose = require('passport-local-mongoose');
 mongoose.connect('mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run', {useNewUrlParser: true}, function(err) {
 	console.log(err);
 });
-
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -23,7 +22,6 @@ app.use(require('express-session')({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
 var studentSchema=new mongoose.Schema({
 	id:Number,
 	name:String,
@@ -33,6 +31,7 @@ var studentSchema=new mongoose.Schema({
 	batchid:Number,
 	aadhaarid:Number
 });
+
 studentSchema.plugin(passportLocalMongoose);
 
 var studentTable=mongoose.model("studentTable",studentSchema);
@@ -130,10 +129,6 @@ app.get("/admin/dashboard",function(req,res){
 app.post("/admin/dashboard/resolve",function(req,res){
 	//res.render();
 })
-app.listen(4000,function(){
-
-
-
+app.listen(4500,function(){
 	console.log("Server started at 4000");
-
 })
