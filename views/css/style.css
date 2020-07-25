@@ -230,6 +230,10 @@ body{
 	color:#ffffff;
 }
 
+i:hover{
+	color: black;
+}
+
 
 #color-panel .segment a.switcher{
 	width:24px;
@@ -246,7 +250,7 @@ body{
 }
 
 .strong-blue-bg{
-	background: #1E69B8;
+	background: linear-gradient(to bottom right, #4776E6, #8E54E9);
 }
 
 .moderate-green-bg{
@@ -254,7 +258,7 @@ body{
 }
 
 .vivid-yellow-bg{
-	linear-gradient(to bottom right, yellow, red);
+	background: linear-gradient(to bottom right, yellow, red);
 }
 
 .block-title{

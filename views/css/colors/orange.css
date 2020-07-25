@@ -1,12 +1,25 @@
 .navbar-default .navbar-toggle .icon-bar{
-	background-color: #e75b1e;
+	background-color: linear-gradient(to bottom right, #FF8008, #F09819);
 }
 .main-menu .navbar-default .navbar-nav .active a{
-	color: #e75b1e;
+  color: linear-gradient(to bottom right, #FF8008, #F09819);
+}
+.main-menu nav li a::after {
+  background: linear-gradient(to bottom right, #FF8008, #F09819);
 }
 #nav_button{
-	background-color: #e75b1e;
+	background-image: linear-gradient(to bottom right, #FF8008, #F09819);
+}
+#nav_button:hover{
+	border-color: linear-gradient(to bottom right, #FF8008, #F09819);
 }
 #color-panel a.panel-button:hover{
-	color: #e75b1e;
+	color: linear-gradient(to bottom right, #FF8008, #F09819);
+}
+.fa{
+	color: linear-gradient(to bottom right, #FF8008, #F09819);
+}
+#contact{
+	background-image: linear-gradient(to bottom right, #FF8008, #F09819);
+	color:#fff;
 }
