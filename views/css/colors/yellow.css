@@ -19,3 +19,7 @@
 .fa{
 	color: linear-gradient(to bottom right, yellow, red);
 }
+#contact{
+	background-image: linear-gradient(to bottom right, yellow, red);
+	color:#fff;
+}

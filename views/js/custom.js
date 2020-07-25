@@ -58,5 +58,5 @@
      jQuery('#changeable-colors').attr('href', 'css/colors/' + title + '.css');
      return false;
    });
-   
+
 })(jQuery);

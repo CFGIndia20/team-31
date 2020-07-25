@@ -156,6 +156,9 @@ body{
 	transition: none;
 	transform: scale(1, 1);
 }
+#nav_button::after {
+    background: none;
+}
 @media only screen and (max-width: 768px) {
   .main-menu nav li a{
 		float:right;
@@ -251,9 +254,12 @@ body{
 }
 
 .vivid-yellow-bg{
-	background: #fdcb03;
+	linear-gradient(to bottom right, yellow, red);
 }
 
+.block-title{
+	font-size: 80px;
+}
 /*------------------------------------------------------------------COLOUR PANEL-------------------------------------------------------------------*/
 .banner{
 	background:url(../images/banner.jpg) no-repeat center top;
@@ -442,10 +448,7 @@ h1 span {
   }
 }
 
-
-
-
-
+/* ------------------------------------------------------------------------------GALLERY-------------------------------------------------------- */
 .gal-container{
 	padding: 12px;
 }
@@ -550,4 +553,108 @@ h1 span {
 #gallery-heading{
 	color:#000;
 	font-color:#000;
+}
+
+/* --------------------------------------------------------------------------LOGIN---------------------------------------------------------------- */
+#login{
+	background:url(../images/faq.jpg) no-repeat center;
+	background-attachment:fixed;
+	background-size:cover;
+	position:relative;
+}
+
+.login-main h2{
+	color:#ffffff;
+}
+
+.login-box{
+	padding-top:20px;
+}
+
+.login-block{
+	background:#FFF;
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+.login-img-box{
+	float:left;
+	width:50%;
+	position: relative;
+}
+
+.login-img-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 0;
+	transition: .3s all;
+	text-align:center;
+}
+
+.login-img-box:hover img{
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+}
+.login-img-box:hover .overlay {
+    opacity: 1;
+}
+
+.login-img-box img{
+	width:100%;
+	padding:5%
+}
+
+.overlay i{
+	margin-top: 42%;
+	border: 1px solid #fff;
+	padding: 15px;
+	border-radius: 50%;
+	color:#ffffff;
+	font-size:18px;
+}
+
+.login-dit {
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.login-dit h2{
+		font-size: 52px;
+    line-height: 20px;
+    color: #000;
+		font-weight:500;
+    margin-bottom: 20px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+.login-btn-v{
+	clear:both;
+	padding-top:30px;
+	text-align:center;
+}
+
+.login-btn-v a {
+    color: #fff;
+    min-width: 219px;
+    padding: 10.5px 20px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.login-btn-v a:hover {
+    background: none;
+}
+
+#contact{
+	font-size: 20px;
 }
