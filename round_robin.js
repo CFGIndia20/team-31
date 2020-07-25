@@ -19,9 +19,10 @@
      
 
       //s is the slot id which is in batch collection
-      dbo.collection("batch").findOne({"teacher_id":null},function(err,result){
+      dbo.collection("batch").findOne({teacher_id:null},function(err,result){
         batch_item=result;
         s=batch_item.slot_id;
+        batch_item_id=batch_item.id;
       });
       
 
@@ -48,37 +49,28 @@
               dbo.collection("teacher").updateOne(myquery, newvalues, function(err, res) {
               if (err) throw err;
               console.log("1 document updated");
-              db.close();
+              
               });
 
 
-                var myquery = { id:batch_item.id};
+                var myquery = { id:batch_item_id};
               var newvalues = { $set: {teacher_id:id} };
               dbo.collection("batch").updateOne(myquery, newvalues, function(err, res) {
                 if (err) throw err;
                 console.log("1 document updated");
-                db.close();
+               
                });
-
-        
-       
-        for (j=i-1, len = queue.length; j < len; j++)
-        {
-              
-
-        }
-        j=queue.pop();//dequeue operation
-        queue.add(j);//enqueue operation
-        var myquery1 = { _id: teacherid,my_array.s:1 };
-        new values1={}
        }
+      
       }
       
       
+    }
   }
-  }
+  dbo.close();
+});
      
-    });
+
 
 
 
