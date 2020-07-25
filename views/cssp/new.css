@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Nov 10, 2014, 3:13:08 PM
-    Author     : Deva
-*/
+
 .dash{width:100%;overflow:auto;background:#ecf0f1;}
 .leftpanel{width: 20%;padding-left: 0;position: absolute;background: #252422 !important;} /*width: 18.9%;padding-left: 1.5%;position: absolute;background: #454e59 !important;*/
 .dashboardmsg{width: 56.5%;padding-top: 2%;overflow:hidden;margin-left: 22.5%;}
