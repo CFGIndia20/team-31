@@ -32,7 +32,6 @@ var teacherSchema=new mongoose.Schema({
 
 var teacherTable=mongoose.model("teacherTable",teacherSchema);
 
-var studentTable=mongoose.model("studentTable",studentSchema);
 
 var adminSchema=new mongoose.Schema({
 	id:Number,
@@ -43,4 +42,19 @@ var adminSchema=new mongoose.Schema({
 
 var adminTable=mongoose.model("adminTable",adminSchema);
 
+var batchSchema=new mongoose.Schema({
+	id:Number,
+	name:String,
+});
 
+app.get("/",function(req,res){
+	res.send("Hi");
+})
+
+app.get("*",function(req,res){
+	res.send("Not Found");
+})
+
+app.listen(4000,function(){
+	console.log("Server started at 4000");
+})
