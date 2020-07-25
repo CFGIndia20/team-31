@@ -80,7 +80,7 @@ app.get("/student/login",function(req,res){
 })
 
 app.get("/teacher/login",function(req,res){
-	res.render("teach_signup");
+	res.render("teach_tt");
 })
 
 app.get("/admin/login",function(req,res){
