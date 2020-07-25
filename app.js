@@ -1,4 +1,5 @@
-var express=require("express");
+tart
+ar express=require("express");
 var app=express();
 var bodyParser=require("body-parser");
 var mongoose=require("mongoose");
@@ -43,7 +44,6 @@ var teacherSchema=new mongoose.Schema({
 
 var teacherTable=mongoose.model("teacherTable",teacherSchema);
 
-var studentTable=mongoose.model("studentTable",studentSchema);
 
 var adminSchema=new mongoose.Schema({
 	id:Number,
@@ -54,7 +54,20 @@ var adminSchema=new mongoose.Schema({
 
 var adminTable=mongoose.model("adminTable",adminSchema);
 
+var batchSchema=new mongoose.Schema({
+	id:Number,
+	name:String,
+});
 
+app.get("/",function(req,res){
+	res.render("index.ejs");
+})
+
+app.get("*",function(req,res){
+	res.send("Not Found");
+})
+
+<<<<<<< HEAD
 
 app.get("/",function(req,res){
 	res.render("landing");
@@ -66,4 +79,8 @@ app.get("/secret",(req,res)=>{
 
 app.listen(3000, ()=>{
 	console.log(`Server has started on port`);
+=======
+app.listen(3000,function(){
+	console.log("Server started at 4000");
+>>>>>>> 0d9a9e64013afac6e17a4fb4c0b3a5cc0a07dbd8
 })
