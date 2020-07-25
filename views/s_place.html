@@ -8,6 +8,7 @@
         <link href="./cssp/mobileViewStyles.css" type="text/css" rel="stylesheet">
         <link href="./cssp/new.css" type="text/css" rel="stylesheet">
         <script type="text/javascript">
+		
 //here '$s' is replaced in place of '$', because of conflict between js. By change the variable, this script never conflict with others.
             $(function ($s) {
                 $s('.ui.accordion')
@@ -60,8 +61,7 @@
                     
                     
                         <a class="mobileView" href="index.html"><img height=50px width=200px src="./cssp/logo.jpg" class="img-responsive" alt="logo"></a> 
-                    
-                        
+						
                     
                 </div>
                 
@@ -78,29 +78,6 @@
               
             </div>               
             
-            
-            
-                
-                <div class="dashalarm">
-                    <div class="logoutmenu">
-                        <div class="logout-box">
-                            <div id="ProfilPict" class="profilelefttextlogout">
-                                <a href="index.html">
-                                    
-                                    
-                                        
-                                    
-                                </a>
-                            </div>
-                            <div id="ProfilePictArow" class="profilelefttextlogout" style="padding: 0px 6px;"><i><img style="width:12px; height:8px; margin:16px 4px auto;" src="./cssp/logouticon.png"></i></div>
-                            <div id="logoutdrp" class="logoutitem" style="display: none;">
-                                
-                                <a id="logoutmenu" class="logout-color" href="index.html" onclick="dologout()"><i class="fa fa-sign-out"></i>&nbsp;Logout</a>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Logout Menu -->
             
 
         </div>
@@ -230,7 +207,7 @@
                     <div class="wrap-container">
                         
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
                                 <a href="javascript:showVisitedCompany()" class="count-link">
                                     <div class="count-item bgitem-1">
                                         <span class="count-icon bgicon-1">
@@ -242,8 +219,10 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <!-- </div> -->
+						</div>
+						<div class="row">
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
                                 <a href="javascript:showEligibleCompany()" class="count-link">
                                     <div class="count-item bgitem-2">
                                         <span class="count-icon bgicon-2">
@@ -255,8 +234,10 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <!-- </div> -->
+						</div>
+						<div class="row">
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
                                 <a href="javascript:showAppliedCompany()" class="count-link">
                                     <div class="count-item bgitem-3">
                                         <span class="count-icon bgicon-3">
@@ -268,8 +249,10 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <!-- </div> -->
+						</div>
+						<div class="row">
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
                                 <a href="javascript:showSelectedCompany()" class="count-link">
                                     <div class="count-item bgitem-4">
                                         <span class="count-icon bgicon-4">                                    
@@ -281,7 +264,8 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            <!-- </div> -->
+						</div>
                         </div>
                         
                     </div>
