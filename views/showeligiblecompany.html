@@ -1,6 +1,9 @@
 
 <%- include("partials/header_stud.ejs") %>
-<li>
 <!-- added by aadil u have to add the eligible company list for a student-->
-</li>
+<% for (var i =1; i <=#aadil;  i++ ) { %>
+		<button>Apply</button>
+		<span><%=i%></span>
+	<% } %>
+
  <%- include("partials/footer.ejs") %>
