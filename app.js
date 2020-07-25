@@ -48,13 +48,13 @@ var batchSchema=new mongoose.Schema({
 });
 
 app.get("/",function(req,res){
-	res.render("index.ejs");
+	res.render("index.ejs");ls
 })
 
 app.get("*",function(req,res){
 	res.send("Not Found");
 })
 
-app.listen(3000,function(){
+app.listen(5000,function(){
 	console.log("Server started at 4000");
 })
