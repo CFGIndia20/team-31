@@ -53,8 +53,33 @@ app.get("/",function(req,res){
 	res.render("index.ejs");
 })
 
+app.get("/student/dashboard",function(req,res){
+	//res.render();
+})
 
+app.post("/student/dashboard/book",function(req,res){
+	//res.render();
+})
 
+app.get("/teacher/dashboard",function(req,res){
+	//res.render();
+})
+
+app.post("/teacher/query",function(req,res){
+	//res.render();
+})
+
+app.get("/teacher/timetable",function(req,res){
+	//res.render();
+})
+
+app.get("/admin/dashboard",function(req,res){
+	//res.render();
+})
+
+app.post("/admin/dashboard/resolve",function(req,res){
+	//res.render();
+})
 app.listen(5000,function(){
 
 	console.log("Server started at 4000");
