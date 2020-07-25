@@ -47,10 +47,12 @@ var teacherSchema=new mongoose.Schema({
 	password:String,
 	batchid:Array,
 	preference:String,
-	tSlot:0
+	slots:Array,
+	tSlot:Number,
 });
 
 var teacherTable=mongoose.model("teacherTable",teacherSchema);
+
 
 var adminSchema=new mongoose.Schema({
 	id:Number,
@@ -69,7 +71,6 @@ var batchSchema=new mongoose.Schema({
 });
 
 
-
 app.get("/",function(req,res){
 	res.render("index1");
 })
@@ -79,7 +80,8 @@ app.get("/student/login",function(req,res){
 })
 
 app.get("/teacher/login",function(req,res){
-	res.render("teach_tt");
+	console.log("hi Raj");
+	res.render("teach_signup");
 })
 
 app.get("/admin/login",function(req,res){
@@ -109,21 +111,12 @@ app.get("/student/login",function(req,res){
 
 })
 
-app.get("/student/dashboard",(req,res)=>{
-	res.render("stud_dashboard");
-});
 
-app.get("/teacher/dashboard",(req,res)=>{
-	res.render("teach_tt");
-});
+
 
 app.get("/teacher/dashboard",function(req,res){
 	//res.render();
 })
-
-app.get("/student/dashboard/book",(req,res)=>{
-	res.render("stud_dashboard");
-});
 
 app.post("/teacher/query",function(req,res){
 	var ob1=req.body.obj; 
