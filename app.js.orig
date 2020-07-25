@@ -1,5 +1,4 @@
-tart
-ar express=require("express");
+var express=require("express");
 var app=express();
 var bodyParser=require("body-parser");
 var mongoose=require("mongoose");
@@ -58,6 +57,14 @@ var batchSchema=new mongoose.Schema({
 	id:Number,
 	name:String,
 });
+
+app.get("/",function(req,res){
+	res.render("index.ejs");
+})
+
+app.get("*",function(req,res){
+	res.send("Not Found");
+})
 
 <<<<<<< HEAD
 
