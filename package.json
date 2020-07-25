@@ -1,0 +1,27 @@
+{
+  "name": "thenudge",
+  "version": "1.0.0",
+  "description": "A one stop shop to handle the entire nudge initiative to help youth develop necessary skills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CFGIndia20/team-31.git"
+  },
+  "keywords": [
+    "cfg",
+    "thenudge"
+  ],
+  "author": "aadilsachdev_rajpanchal_rakshithserigiri_kimayadesai_ishapatro_tishakhatri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CFGIndia20/team-31/issues"
+  },
+  "homepage": "https://github.com/CFGIndia20/team-31#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
