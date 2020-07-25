@@ -1,0 +1,41 @@
+
+<%- include("partials/dashboard_h.ejs") %>
+
+<div class="col-md-6  table-right" id="box">
+    <h2>Any Queries?</h2>
+     <form action="/teacher/dashboard" method="POST"  enctype="multipart/form-data" >
+              <div class="form-group" >
+                  <label for="Slot Time">Slot Time</label>
+                  <input type="radio" name="slot" id="slot1" class="form-control" required >
+                  <label for="8:00-9:00am">7:00-8:00am</label>
+                  <input type="radio" id="slot2" name="slot" value="8:00-9:00am">
+                  <label for="8:00-9:00am">8:00-9:00am</label>
+                  <input type="radio" id="slot3" name="slot3" class="form-control" required >
+                  <label for="8:00-9:00am">9:00-10:00am</label>
+                  <input type="radio" id="slot4" name="slot" value="8:00-9:00am">
+                  <label for="8:00-9:00am">10:00-11:00am</label>
+                  <input type="radio" id="slot5" name="slot" value="8:00-9:00am">
+                  <label for="8:00-9:00am">11:00-12:00pm</label>
+                  <input type="radio" id="slot6" name="slot" value="8:00-9:00am">
+                  <label for="8:00-9:00am">1:00-2:00pm</label>
+                  <input type="radio" id="slot7" name="slot" class="form-control" required >
+                  <label for="8:00-9:00am">2:00-3:00pm</label>
+                  <input type="radio" id="slot8" name="slot" value="8:00-9:00am">
+                  <label for="8:00-9:00am">3:00-4:00am</label>
+              </div><br>
+               
+  
+              <div class="form-group">
+                  <label for="email">Describe </label>
+                  <input type="text" name="Describe" id="rcorners2" class="form-control" required >
+                </div><br>
+                 <button type="submit" style="font-size:7pt;color:#000;background-color:#FFCE00;border:2px solid #000;padding:3px;height: 40px;width: 65px;">Submit</button>
+                 <br>
+              </div><br>
+              
+             </form>
+  </div>
+
+
+  
+<%- include("partials/footer.ejs") %>

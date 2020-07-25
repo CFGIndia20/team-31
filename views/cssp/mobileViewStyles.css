@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 12, 2016, 1:10:34 PM
+    Author     : Manjula
+*/
+
+.notification{width: 80px;float: left;margin: 1% 0% 0% 0%;right: 114%;top: 8.8%;position: absolute;}
+.mobileViewiconBar{display:none;}
+.desktopView{display:block;}
+.desktopViewHide{display:none !important;}
+.checkbox-align{padding: 0.4em 1.0em !important;}
+@media (max-width: 800px){    
+    .leftPanelTop {margin: -5% auto !important;}
+    .dashprofilepanel {padding: 0px 0px 7px 10px !important;}
+    .readers-list a{margin:4px 4px 4px -3px !important;}
+    .notification{display:none;}
+    .searchautotext{display:none;}
+    .searchimg {display:none;}
+    .headerdash{z-index:100000;}
+    /* Logout dropdown issue start*/
+    .ui.visible.transition{margin-top:0px !important;}
+    .sixfourty {display: block !important;}
+     /* Logout dropdown issue start*/
+    .mobileView{display:none !important;}
+    .mobileViewDisplay{display:block !important;}
+     /* Job Alignment*/
+    .marginTop8{margin-top:8px !important;}
+    .marginTop15{margin-top:15px !important;}
+    .marginTop21{margin-top:21px !important;}
+    .marginTop26{margin-top:26px !important;} 
+    .paddingBottom15{padding-bottom: 15% !important;}
+    .buttonNew {width: 49% !important;margin-left: 1% !important;}
+    .displayBlock{display:block !important;}
+    .readers-list {line-height: 11px !important;}
+    .ui.menu.vertical {padding: 0;} /* padding: 0% 0% 656% 2%; */
+    .ui.menu.left {top: 0;left: 0;right: auto;bottom: auto;width: 99.6%;background: #454e59;height: auto !important;}
+    .myDiv{margin: 0px 0px;}
+    .marginTopWhole{margin:0 auto !important;}
+    /* .leftpanel {margin: -1px auto !important;height:500px;padding-bottom: 101% !important;width: 95% !important;} */
+    /* .leftpanel {margin: -1px auto !important;padding-bottom: 101% !important;width: 95% !important;} */
+    .indexcover, .searchautotext{display:none;}
+    .shorticon{display:block;}
+    .myDiv{z-index:100 !important;}
+    .ui.segment{margin: 1em -0.2em !important;}
+    .wrapper{margin-left:4.5% !important;}
+    .dashboardmsg{margin-left: 5% !important;}
+    .ui.grid .column > .ui.segment:only-child {margin: 10px 0em;padding: 1em;}
+    .marginright {display:none;}
+    .wid{display:none;}
+    .ui.segment {width:93%;}
+     /* LeftPanel Styles */
+    .listforresult{margin:0% 0% -1% 0% !important;}
+    .readers-list a {padding: 8px 5px 3px 40px !important;}
+    .readers-list img {margin: -13px 8px -4px -38px !important; padding: 5px 1px;}
+    .Cimage {width: 62% !important;}
+    .ui.list .item {font-size: 1em;line-height: 23px;}
+    /* Take test style changes  */
+    .fixheight{padding-left: 7px;width: 87% !important;}
+    .margin-left-takeTest {margin-left:-1%;}
+    #loadingGif{margin-left:45% !important;}
+    .reduceSpace{padding: 15px 0 15px 0 !important;}
+}

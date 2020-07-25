@@ -50,17 +50,48 @@ var batchSchema=new mongoose.Schema({
 	name:String,
 });
 
+var batchTable=mongoose.model("batchTable",batchSchema);
+
+var querySchema=new mongoose.Schema({
+	id: Number,
+	content:String
+});
+
+var queryTable=mongoose.model("queryTable",querySchema);
 
 app.get("/",function(req,res){
-	res.render("index.ejs");
+	res.render("index");
 })
 
+app.post("/login",function(req,res){
+	var option=req.body.option;
+	if(option=="student")
+		{
+			res.redirect("/student/dashboard");
+		}
+	
+	if(option=="teacher")
+		{
+			res.redirect("/teacher/dashboard");
+		}
+	
+	if(option=="admin")
+		{
+			res.redirect("/admin/dashboard");
+		}
+})
+
+app.get("/student/login",function(req,res){
+	res.render("stud_signup");
+})
+
+
 app.get("/student/dashboard",function(req,res){
-	//res.render();
+	res.render("stud_dashboard.ejs");
 })
 
 app.post("/student/dashboard/book",function(req,res){
-	//res.render();
+	
 })
 
 app.get("/teacher/dashboard",function(req,res){
@@ -68,7 +99,16 @@ app.get("/teacher/dashboard",function(req,res){
 })
 
 app.post("/teacher/query",function(req,res){
-	//res.render();
+	var ob1=req.body.obj; 
+	queryTable.create(ob1,function(err,newQuery){
+		if(err){
+			console.log(err);
+		}
+		else{
+			
+			res.redirect("/teacher/dashboard");
+		}
+	})
 })
 
 app.get("/teacher/timetable",function(req,res){
