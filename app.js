@@ -47,12 +47,10 @@ var teacherSchema=new mongoose.Schema({
 	password:String,
 	batchid:Array,
 	preference:String,
-	slots:Array,
-	tSlot:Number,
+	tSlot:0
 });
 
 var teacherTable=mongoose.model("teacherTable",teacherSchema);
-
 
 var adminSchema=new mongoose.Schema({
 	id:Number,
@@ -69,6 +67,7 @@ var batchSchema=new mongoose.Schema({
 	slot_id:Number,
 	teacher_id:Number,
 });
+
 
 
 app.get("/",function(req,res){
@@ -115,7 +114,7 @@ app.get("/student/dashboard",(req,res)=>{
 });
 
 app.get("/teacher/dashboard",(req,res)=>{
-	res.render("teach_dashboard");
+	res.render("teach_tt");
 });
 
 app.get("/teacher/dashboard",function(req,res){
