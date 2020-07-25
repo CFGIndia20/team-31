@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+       
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -84,15 +84,6 @@
         <div class="fixedpanel"></div>
 
     </form>
-
-
-
-    
-    
-
-
-
-    
         
         <title>Admin Placement</title>
         
@@ -108,27 +99,10 @@
                 <div class="myDiv">
                     <div class="leftpanel">
                         
-
-
-
-
-
-
-
 <div class="ui left  vertical inverted  menu verticalMenuBg">
     <div id="mi-slider" class="mi-slider">
            
         <div> <!-- hide the div in mobile view -->
-            
-            
-                
-           
-            
-            
-                
-            
-            
-            
             
             
         </div>
@@ -139,32 +113,6 @@
         
         <div class="favourline" style="width:100%;"></div>
         <div class="sidebar-panel">
-            
-            
-              
-                
-                    
-                    
-                                     
-                            
-                    
-                    
-                    
-                        
-                        
-                                                      
-                                
-                                
-                                
-                            
-                            
-                        
-                        
-                        
-                             
-                            
-                        
-
                         <div class="mobileView"> <!-- hide the app in mobile view start -->
                             <a href="https://www.youtube.com" class="sidenav-link" onclick="hideOnClick();">
                                     <i ><img src="./cssp/trainicon.png"></i>
@@ -172,17 +120,6 @@
                                 </a>
                             
 
-                            
-                                
-                                   
-
-                            
-                                
-                                
-                                
-                            
-                            
-                                
                             
                         </div>  <!-- hide the app in mobile view end -->
                     
@@ -203,12 +140,14 @@
                     </div>
                 </div>
                 <!-- right panel -->
+				
+				
                 <div class="wrapper-box">
                     <div class="wrap-container">
                         
 						<div class="row">
                             <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
-                                <a href="javascript:showSelectedCompany()" class="count-link">
+                                <a href="company_form.html" class="count-link">
                                     <div class="count-item bgitem-4">
                                         <span class="count-icon bgicon-4">                                    
                                             <img src="./cssp/company.png">
@@ -224,94 +163,98 @@
                                 </a>
                             <!-- </div> -->
 						</div>
-                        <div class="row">
+						<% for (var i =1; i <=#aadil;  i++ ) { %>
+							<div class="row">
                             <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
-                                <a href="javascript:showVisitedCompany()" class="count-link">
+                                <a href="comp.html" class="count-link">
                                     <div class="count-item bgitem-1">
                                         <span class="count-icon bgicon-1">
                                             <img src="./cssp/company.png">
                                         </span>
                                         <div class="count-info">
                                             
-                                            <span class="count-text">Company A</span>
+                                            <span class="count-text"><%=i%></span>
                                         </div>
                                     </div>
                                 </a>
                             <!-- </div> -->
-						</div>
-						<div class="row">
-                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
-                                <a href="javascript:showEligibleCompany()" class="count-link">
-                                    <div class="count-item bgitem-2">
-                                        <span class="count-icon bgicon-2">
-                                            <img src="./cssp/company.png">
-                                        </span>
-                                        <div class="count-info">
+							</div> 
+				<% } %>
+						
+				
+                        
+						<!-- <div class="row"> -->
+                            
+                                <!-- <a href="javascript:showEligibleCompany()" class="count-link"> -->
+                                    <!-- <div class="count-item bgitem-2"> -->
+                                        <!-- <span class="count-icon bgicon-2"> -->
+                                            <!-- <img src="./cssp/company.png"> -->
+                                        <!-- </span> -->
+                                        <!-- <div class="count-info"> -->
                                             
-                                            <span class="count-text">Company B</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            <!-- </div> -->
-						</div>
-						<div class="row">
-                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
-                                <a href="javascript:showAppliedCompany()" class="count-link">
-                                    <div class="count-item bgitem-3">
-                                        <span class="count-icon bgicon-3">
-                                            <img src="./cssp/company.png">
-                                        </span>
-                                        <div class="count-info">
+                                            <!-- <span class="count-text">Company B</span> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                <!-- </a> -->
+                            
+						<!-- </div> -->
+						<!-- <div class="row"> -->
+                           
+                                <!-- <a href="javascript:showAppliedCompany()" class="count-link"> -->
+                                    <!-- <div class="count-item bgitem-3"> -->
+                                        <!-- <span class="count-icon bgicon-3"> -->
+                                            <!-- <img src="./cssp/company.png"> -->
+                                        <!-- </span> -->
+                                        <!-- <div class="count-info"> -->
                                             
-                                            <span class="count-text">Company C</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            <!-- </div> -->
-						</div>
-						<div class="row">
-                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> -->
-                                <a href="javascript:showSelectedCompany()" class="count-link">
-                                    <div class="count-item bgitem-4">
-                                        <span class="count-icon bgicon-4">                                    
-                                            <img src="./cssp/company.png">
-                                        </span>
-                                        <div class="count-info">
+                                            <!-- <span class="count-text">Company C</span> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                <!-- </a> -->
+                            
+						<!-- </div> -->
+						<!-- <div class="row"> -->
+                            
+                                <!-- <a href="javascript:showSelectedCompany()" class="count-link"> -->
+                                    <!-- <div class="count-item bgitem-4"> -->
+                                        <!-- <span class="count-icon bgicon-4">                                    
+                                            <!-- <img src="./cssp/company.png"> -->
+                                        <!-- </span> -->
+                                        <!-- <div class="count-info"> -->
                                             
-                                            <span class="count-text">Company D</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            <!-- </div> -->
-						</div>
-                        </div>
+                                            <!-- <span class="count-text">Company D</span> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                <!-- </a> -->
+                            
+						<!-- </div> -->
+                        
                         
                     </div>
-		
         
 
         
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript"> -->
             
 
-            function showVisitedCompany() {
-                document.frm1.action = "/showvistedecompanylist.action";
-                document.frm1.submit();
-            }
+            <!-- function showVisitedCompany() { -->
+                <!-- document.frm1.action = "/showvistedecompanylist.action"; -->
+                <!-- document.frm1.submit(); -->
+            <!-- } -->
             
-            function showEligibleCompany() {
-                document.frm1.action = "/showstudenteligiblecompany.action";
-                document.frm1.submit();
-            }
+            <!-- function showEligibleCompany() { -->
+                <!-- document.frm1.action = "/showstudenteligiblecompany.action"; -->
+                <!-- document.frm1.submit(); -->
+            <!-- } -->
             
-            function showAppliedCompany() {
-                document.frm1.action = "/showstudentappliedcompany.action";
-                document.frm1.submit();
-            }
+            <!-- function showAppliedCompany() { -->
+                <!-- document.frm1.action = "/showstudentappliedcompany.action"; -->
+                <!-- document.frm1.submit(); -->
+            <!-- } -->
             
             
-        </script> 
+        <!-- </script>  -->
     
 
 
