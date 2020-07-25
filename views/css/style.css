@@ -1,7 +1,7 @@
 body{
 	font-size:14px;
 	font-family: 'Roboto', sans-serif;
-	line-height:1.80857;
+	line-height: 1.80857;
 }
 
 /*------------------------------------------------------------------Preloader-------------------------------------------------------------------*/
@@ -298,13 +298,12 @@ body{
 }
 
 .book-btn a{
-	/*background:#e75b1e;*/
 	color:#fff;
 	min-width: 219px;
-    padding: 10.5px 20px;
-    display: inline-block;
-    text-align: center;
-    font-weight: 800;
+  padding: 10.5px 20px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 800;
 	text-transform:uppercase;
 	font-size:18px;
 }
@@ -315,7 +314,6 @@ body{
 .hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     position: relative;
@@ -331,11 +329,8 @@ body{
     bottom: 0;
     background: red;
     height: 2px;
-    -webkit-transition-property: left, right;
     transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
