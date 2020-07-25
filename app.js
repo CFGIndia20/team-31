@@ -62,17 +62,25 @@ var batchSchema=new mongoose.Schema({
 <<<<<<< HEAD
 
 app.get("/",function(req,res){
+<<<<<<< HEAD
+	res.render("index.ejs");ls
+=======
 	res.render("landing");
+>>>>>>> ec9723b827e1ea6e039029a0f3f65560b3218150
 })
 
 app.get("/secret",(req,res)=>{
 	res.render("secret");
 });
 
+<<<<<<< HEAD
+app.listen(5000,function(){
+=======
 app.listen(3000, ()=>{
 	console.log(`Server has started on port`);
 =======
 app.listen(3000,function(){
+>>>>>>> ec9723b827e1ea6e039029a0f3f65560b3218150
 	console.log("Server started at 4000");
 >>>>>>> 0d9a9e64013afac6e17a4fb4c0b3a5cc0a07dbd8
 })
