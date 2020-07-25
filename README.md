@@ -38,3 +38,6 @@ Name: **Tisha Khatri**\
 Institute: Vellore Institute of Technology, Chennai\
 Contact: 8949492869\
 Email: tisha.khatri17@gmail.com
+
+Team Mentor!
+Name: **Tanmay Mankad**\
