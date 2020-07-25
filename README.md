@@ -9,11 +9,11 @@ Phn: 7809356299\
 Email: isha.patro@vitap.ac.in
 
 Hey Isha !
-I was thinking to make one too,But great you did it
-NAME: **RAKSHITH SIRIGERI**
-INSTITUTION: R V COLLEGE OF ENGINEERING
-Phn: 7337733038
-Email: rakshithsirigeri@gmail.com
+I was thinking to make one too,But great you did it\
+NAME: **RAKSHITH SIRIGERI**\
+INSTITUTION: R V COLLEGE OF ENGINEERING\
+Phn: 7337733038\
+Email: rakshithsirigeri@gmail.com\
 
 Hello Everybody!\
 Name: **Kimaya Desai**\
