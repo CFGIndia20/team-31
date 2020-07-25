@@ -1,0 +1,195 @@
+/*------------------------------------
+Project name: Campus Interaction
+Date Created: 28/05/2018
+Author: PreludeSys
+------------------------------------*/
+
+/* Dashboard */
+
+.wrapper-box{
+    width:80%;
+    margin-left: 20%;
+    padding-bottom: 3px!important;
+    min-height:100vh;
+    height:100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap-container{
+    padding: 20px 30px;
+}
+.slide-controls{
+    float:right;
+    margin:10px 0;
+}
+.slide-controls a, .slide-controls a:hover, .slide-controls a:focus{
+    text-decoration: none;
+    margin:0 3px;
+}
+
+.divider{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.source-list{    
+    list-style:none;
+    padding:0;
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+}
+
+.source-list li{
+    display: inline;
+    padding:20px 10px; 
+    border-right: 1px solid #CCCCCC;
+}
+
+.source-list li:last-child{
+    border:0;
+}
+
+.source-list img{
+    width:12%;
+    height:82px;
+    object-fit: contain;
+}
+
+.form-wrapper .alert-success{
+    text-align: center;
+}
+@media (max-width:767px){
+    
+   
+    /* Admin Dashboard */
+    .dashboard-wrapper{
+        width:95%;
+        margin: 18px auto;
+    }
+
+    .padlt-15{
+        padding:0 10px!important;
+    }
+
+    .ciinlineright{
+        float:none;
+    }
+    .addashboard-head h4{
+        font-size: 14px;
+        float: none;
+        margin-bottom: 15px!important;
+    }
+    .addashboard-filter {
+        float: none;
+        width: 100%;
+    }
+    .interview-uploadform{
+        width:90%;
+        margin:0 auto;
+    }
+    .interview-uploadform .btn-submit{
+        display:block;
+        width:100%;
+    }
+    .admin-element{
+        height:110px;
+    }
+    .admin-icon{
+        width:110px;
+        height:110px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+    
+    /* Admin Dashboard */
+    .admin-text{
+        font-size:10px;
+    }
+}
+
+
+
+.col-btn{
+    margin: 24px 0 0;
+}
+
+/* Dashboard - Cards */
+.count-item{
+    display: block;
+    min-height: 110px;
+    background: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.count-icon{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 110px;
+    width: 110px;
+    text-align: center;
+    line-height: 110px;
+    background: rgba(0,0,0,0.2);
+}
+
+.count-info{
+    padding: 6.95% 10px;
+    margin-left: 110px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.count-values{
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.count-text{
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.bgitem-1{
+    background-color:#000000;
+}
+
+.bgicon-1{
+    background-color:#ffc400;
+}
+
+.bgitem-2{
+    background-color:#000000;
+}
+
+.bgicon-2{
+    background-color:#ffc400;
+}
+
+.bgitem-3{
+    background-color:#000000;
+}
+
+.bgicon-3{
+    background-color:#ffc400;
+}
+
+.bgitem-4{
+    background-color:#000000;
+}
+
+.bgicon-4{
+    background-color:#ffc400;
+}
+
+
