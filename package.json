@@ -4,7 +4,6 @@
   "description": "A one stop shop to handle the entire nudge initiative to help youth develop necessary skills",
   "main": "app.js",
   "scripts": {
-	  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,13 +26,10 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.9.25",
-<<<<<<< HEAD
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1",
-=======
     "request": "^2.88.2",
->>>>>>> 0d9a9e64013afac6e17a4fb4c0b3a5cc0a07dbd8
     "save": "^2.4.0"
   }
 }
