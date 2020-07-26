@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #383835}
+  
+  th {
+    background-color: #FFCE00;
+    color: white;
+  }
+  body{
+      color:#fff;
+    background-color: #000;
+      font-size:14px;
+      font-family: 'Roboto', sans-serif;
+      line-height:1.80857;
+  }
+  #rcorners2 {
+    border-radius: 5px;
+    border: 2px solid #FFCE00;
+    height: 20px;
+  
+      
+  }
+  #box{
+    border: 2px solid #FFCE00;
+    border-radius: 5px;
+    
+    
+  }
+  
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
