@@ -7,9 +7,12 @@ var	LocalStrategy = require('passport-local');
 var	passportLocalMongoose = require('passport-local-mongoose');
 
 
-mongoose.connect('mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run', {useNewUrlParser: true}, function(err) {
+mongoose.connect('mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run', {  useCreateIndex: true,
+useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
 	console.log(err);
 });
+var db=mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -112,10 +115,26 @@ app.get("/student/login",function(req,res){
 })
 
 
+app.post("/student/signup",(req,res)=>{
+	var temp=req.body;
+	var newStud = new studentTable({
+		"_id": new studentTable(),
+		name:temp.name,
+		password:temp.pass,
+		batchid:temp.batchid
+	}, { unique: true } );
+	console.log(newStud);
+	newStud.save(function (err, book) {
+      if (err) return console.error(err);
+      console.log(book.name + " saved to collection.");
+      res.render("stud_dashboard");
+    });
 
+	
+});
 
 app.get("/teacher/dashboard",function(req,res){
-	//res.render();
+	res.render("teach_tt");
 })
 
 app.post("/teacher/query",function(req,res){
