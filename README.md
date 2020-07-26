@@ -20,3 +20,27 @@ Algorithm is based on round robin with priority to ensure all the teachers are a
  
 #BACKEND
  MongoDB,NodeJS,EJS
+
+#ROUTE
+get /              - for index page
+get /student/login - for student's login signup
+post /student/login - for student's login signup registration
+get /teacher/login - for teacher's login signup
+post /teacher/login - for teacher's login signup registration
+get /admin/login   - for admin login
+post /login        - for login
+get student/dashboard
+get student/companies/visited
+get student/companies/eligible
+get student/companies/placed
+get student/companies/applied
+get student/placements
+get teacher/dashboard
+post teacher/query
+get teacher/timetable
+get admin/dashboard
+post admin/dashboard
+get admin/placements
+get admin/placements/companyform
+get admin/placements
+post admin/dashboard/resolve
