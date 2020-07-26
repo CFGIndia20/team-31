@@ -1,43 +1,7 @@
-# TEAM-31
+# INTRODUCTION
 
-### Hey!!
-### Add your name and details to this readme so that we can connect and get to know each other better.
-<br><br>
-Name: **Isha Pato**\
-Institution: Vellore Institute of Technology\
-Phn: 7809356299\
-Email: isha.patro@vitap.ac.in
+# THE ISSUE
+About 54 per cent of the youth in India are not job-ready, the latest India Skills report 2019-20 states. Employability of India’s youth has remained stagnant for the past three years, only about 46% . The state of employability has not improved over the last few years, implying the need for more robust actions . Hence we got inspired with the problem statement by The Nudge Foundation/
 
-Hey Isha !
-I was thinking to make one too,But great you did it\
-NAME: **RAKSHITH SIRIGERI**\
-INSTITUTION: R V COLLEGE OF ENGINEERING\
-Phn: 7337733038\
-Email: rakshithsirigeri@gmail.com\
-
-Hello Everybody!\
-Name: **Kimaya Desai**\
-Institute: Sardar Patel Institute of Technology\
-Contact: 9967149783\
-Email: kimaya.desai941@gmail.com
-
-Hey Guys!\
-Name: **Aadil Sachdev**\
-Institute: Thapar University\
-Contact: 9478049621\
-Email: aadilsachdev24@gmail.com\
-
-Hello!\
-Name: **Raj Panchal**\
-Institute: Vellore Institute of Technology, Vellore\
-Contact: 9913320298\
-Email: rajpanchal243@gmail.com
-
-Hey!\
-Name: **Tisha Khatri**\
-Institute: Vellore Institute of Technology, Chennai\
-Contact: 8949492869\
-Email: tisha.khatri17@gmail.com
-
-Team Mentor!
-Name: **Tanmay Mankad**\
+# OUR SOLUTION
+Our project stands out with its unique algorithm which ensures all the teachers get a similar workload and also try to allot a slot to teacher based on his/her preference. The UI is made simple yet elegant to have a self explanatory experience . The database which is made is easily scalable hence would be a great plus point to the project
