@@ -5,9 +5,9 @@ var mongoose=require("mongoose");
 var	passport = require('passport');
 var	LocalStrategy = require('passport-local');
 var	passportLocalMongoose = require('passport-local-mongoose');
+require('dotenv').config();
 
-
-mongoose.connect('mongodb://rajpanchal:raj123@ds023714.mlab.com:23714/cfg_dry_run', {  useCreateIndex: true,
+mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds023714.mlab.com:23714/cfg_dry_run`, {  useCreateIndex: true,
 useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
 	console.log(err);
 });
