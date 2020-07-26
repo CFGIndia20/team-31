@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696494836539",
+    "firebase_url": "https://nudgefoundation-3b4b0.firebaseio.com",
+    "project_id": "nudgefoundation-3b4b0",
+    "storage_bucket": "nudgefoundation-3b4b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696494836539:android:8e5f49df9b5964a441451e",
+        "android_client_info": {
+          "package_name": "in.onebyzero.bang.nudgefoundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696494836539-sp3ddo2osm11dduvmbl80no9po37k574.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.onebyzero.bang.nudgefoundation",
+            "certificate_hash": "2f17864bc1ce3aeb01f537f8167abeed784141f3"
+          }
+        },
+        {
+          "client_id": "696494836539-peacu4c390fmgagptfl6aggn6jhfie43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoVrFrqhy1kln93lOVq5hoZNFXpWIZwaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696494836539-peacu4c390fmgagptfl6aggn6jhfie43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
