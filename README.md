@@ -6,3 +6,17 @@ About 54 per cent of the youth in India are not job-ready, the latest India Skil
 
 # OUR SOLUTION
 Our project stands out with its unique algorithm which ensures all the teachers get a similar workload and also try to allot a slot to teacher based on his/her preference. The UI is made simple yet elegant to have a self explanatory experience along with theme customization. The database which is made is easily scalable hence would be a great plus point to the project
+
+# UNIQUE SOLUTION
+
+Our project stands out with its unique algorithm which ensures all the teachers get a similar workload and also try to allot a slot to teacher based on his/her preference. The UI is made simple yet elegant to have a self explanatory experience . The database which is made is easily scalable hence would be a great plus point to the project
+
+# ALGORITHM
+
+Algorithm is based on round robin with priority to ensure all the teachers are assigned the work equally. It also checks for all the corner cases
+
+# FRONT END
+ HTML,CSS,JAVASCRIPT
+ 
+#BACKEND
+ MongoDB,NodeJS,EJS
