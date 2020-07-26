@@ -137,6 +137,26 @@ app.get("/student/dashboard",function(req,res){
 	res.render("stud_dashboard.ejs");
 })
 
+app.get("/student/companies/visited",function(req,res){
+	res.render("showvisitedcompany.ejs")
+})
+
+app.get("/student/companies/eligible",function(req,res){
+	res.render("showeligiblecompany.ejs")
+})
+
+app.get("/student/companies/placed",function(req,res){
+	res.render("showplacedcompany.ejs")
+})
+
+app.get("/student/companies/applied",function(req,res){
+	res.render("showappliedcompany.ejs")
+})
+
+
+app.get("/student/placements",function(req,res){
+	res.render("s_place")
+})
 
 app.get("/teacher/dashboard",function(req,res){
 	res.render("teach_tt");
@@ -160,8 +180,29 @@ app.get("/teacher/timetable",function(req,res){
 })
 
 app.get("/admin/dashboard",function(req,res){
-	//res.render();
+	res.render("admin_dashboard");
 })
+
+app.post("/admin/dashboard",function(req,res){
+	res.render("admin_dashboard");
+})
+
+
+
+app.get("/admin/placements",function(req,res){
+	res.render("a_place.ejs")
+})
+
+app.get("/admin/placements/companyform",function(req,res){
+	res.render("company_form")
+})
+
+app.post("/admin/placements",function(req,res){
+	res.render("a_place")
+})
+
+
+
 
 app.post("/admin/dashboard/resolve",function(req,res){
 	//res.render();
