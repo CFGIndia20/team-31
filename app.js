@@ -133,6 +133,11 @@ app.post("/student/signup",(req,res)=>{
 	
 });
 
+app.get("/student/dashboard",function(req,res){
+	res.render("stud_dashboard.ejs");
+})
+
+
 app.get("/teacher/dashboard",function(req,res){
 	res.render("teach_tt");
 })
